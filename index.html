@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title></title>
+        <script type= "text/javascript">
+        
+        window.onload = function()
+        {
+            var btn1 = document.getElementById("btn1");
+            btn1.onclick = function(){
+                var text1 = document.getElementById("text1");
+                var text2 = document.getElementById("text2");
+                if(text1.value==text2.value)
+                {
+                    alert("Yes");
+                }
+                else
+                {
+                    alert("No");
+                }
+            }
+        }
+
+        </script>
+    </head>
+    <body>
+     <input type="text" name="text1" id="text1">
+     <input type="text" name="text2" id="text2">
+     <button id="btn1">登入</button>
+    </body>
+</html>
