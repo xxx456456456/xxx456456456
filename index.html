@@ -1,33 +1,85 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <script type= "text/javascript">
-        
-        window.onload = function()
-        {
-            var btn1 = document.getElementById("btn1");
-            btn1.onclick = function(){
-                var text1 = document.getElementById("text1");
-                var text2 = document.getElementById("text2");
-                if(text1.value==text2.value)
-                {
-                    alert("正確");
-                }
-                else
-                {
-                    alert("錯誤");
-                }
+<head>
+    <meta charset="utf-8" />
+    <title>,★~自製第一個網頁~☆</title>
+    <script typeof="text/javascript">
+
+
+
+        window.onload = function () {
+            var btn = document.getElementById('btn1');
+            btn.onclick = function () {
+                window.location.reload();
+            };
+
+            window.btn2.onclick = function () {
+                var a = document.getElementById('user_pws').style.visibility = "visible";
+                document.getElementById('new_user_pws').style.visibility = "hidden";
+
             }
+
+            window.btn3.onclick = function () {
+                document.getElementById('user_pws').style.visibility = "hidden";
+                document.getElementById('new_user_pws').style.visibility = "visible" ;
+
+            }
+
+        };
+
+    </script>
+
+
+    <style type="text/css">
+        #a01 {
+         
+            text-align: center;
+            line-height: 200px;
+            font-size: 100px;
+           
         }
 
-        </script>
-    </head>
-    <body>
-        我是阿維!!~~~
-        <h5>密碼:</h5>
-     <input type="text" name="text1" id="text1">
-        <h5>確認密碼:</h5>
-     <input type="text" name="text2" id="text2">
-     <button id="btn1">登入</button>
-    </body>
+        #bf {
+            background-color: red;
+            font-size: 20px;
+            color: darkviolet;
+        }
+
+        #btn {
+            text-align:center;
+            background-color: yellow;
+			
+        }
+      
+    </style>
+
+
+
+</head>
+<body background="01.gif"  bgcolor="black">
+
+    <div id="a01" style="color:blue">
+        ★~自製第一個網頁~☆
+    </div>
+    <div id="bf">
+        <a href="HtmlPage.html"><marquee direction="left"> 歡迎來到我的第一個網站</marquee></a>
+    </div>
+    <div id="btn">
+	
+        <input id="btn1" name="btn01" type="button" value="首頁" style="width:100px;height:30px;">
+        <input id="btn2" name="btn02" type="button" value="登入" style="width:100px;height:30px;">
+        <input id="btn3" name="btn03" type="button" value="註冊" style="width:100px;height:30px;">
+        <input id="btn4" name="btn04" type="button" value="活動" style="width:100px;height:30px;">
+        <input id="btn5" name="btn05" type="button" value="任務" style="width:100px;height:30px;">
+        <input id="btn6" name="btn06" type="button" value="常見問題" style="width:100px;height:30px;">
+    </div>
+	
+	
+    <iframe id="user_pws" frameborder="0" src="user_pws.html" height="500" #scrolling="yes" style="position:absolute;  width:100%; visibility:hidden"></iframe>
+    <iframe id="new_user_pws" frameborder="0" src="new_user_pws.html" height="500" #scrolling="yes" style=" position:absolute; width:100%; visibility:hidden"></iframe>
+
+	
+
+
+</body>
 </html>
